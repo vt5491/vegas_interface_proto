@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2765f1456bf0340a236cfb3a2be6de, type: 3}
+  m_Name: SteamVR_Input_ActionSet_default_In
+  m_EditorClassIdentifier: 
+  actionSet: {fileID: 0}
+  listDirection: 0
+  actions:
+  - {fileID: 11400000, guid: bfd9de41c731e6044a1441d4f2eecf1f, type: 2}
+  - {fileID: 11400000, guid: 4fdd2d4cc6a88eb4f98f60ec3f653a9e, type: 2}
+  - {fileID: 11400000, guid: 6fd0978d7700b214987c1e540b78a21b, type: 2}
+  - {fileID: 11400000, guid: f024f15da55618244b0fb983a3930f81, type: 2}
+  - {fileID: 11400000, guid: 610360dedc5c2c544a08ebb4785b7078, type: 2}
+  - {fileID: 11400000, guid: 8a0627e067c98034f8f5516de962447f, type: 2}
+  - {fileID: 11400000, guid: a75e81cffeca6c245945c3fb274d703a, type: 2}
+  - {fileID: 11400000, guid: 9838c3ceb7e9f8f45981bcc979d2421b, type: 2}
+  - {fileID: 11400000, guid: ed381c5200a276042882d8950cbaba66, type: 2}
+  - {fileID: 11400000, guid: 4c9cac4e6643f9349ab78c489fddfaa8, type: 2}
+  - {fileID: 11400000, guid: eaca9c7140903234aaa1f37d7803dd19, type: 2}
+  InteractUI: {fileID: 11400000, guid: bfd9de41c731e6044a1441d4f2eecf1f, type: 2}
+  Teleport: {fileID: 11400000, guid: 4fdd2d4cc6a88eb4f98f60ec3f653a9e, type: 2}
+  GrabPinch: {fileID: 11400000, guid: 6fd0978d7700b214987c1e540b78a21b, type: 2}
+  GrabGrip: {fileID: 11400000, guid: f024f15da55618244b0fb983a3930f81, type: 2}
+  Pose: {fileID: 11400000, guid: 610360dedc5c2c544a08ebb4785b7078, type: 2}
+  SkeletonLeftHand: {fileID: 11400000, guid: 8a0627e067c98034f8f5516de962447f, type: 2}
+  SkeletonRightHand: {fileID: 11400000, guid: a75e81cffeca6c245945c3fb274d703a, type: 2}
+  Squeeze: {fileID: 11400000, guid: 9838c3ceb7e9f8f45981bcc979d2421b, type: 2}
+  Pullate: {fileID: 11400000, guid: ed381c5200a276042882d8950cbaba66, type: 2}
+  ButtonRotate: {fileID: 11400000, guid: 4c9cac4e6643f9349ab78c489fddfaa8, type: 2}
+  JoyStickRotate: {fileID: 11400000, guid: eaca9c7140903234aaa1f37d7803dd19, type: 2}

@@ -1,0 +1,15 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vegas_interface_proto.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "strings": {
+        "en_us": {
+          "name": "vegas_interface_proto [Testing]"
+        }
+      }
+    }
+  ]
+}
