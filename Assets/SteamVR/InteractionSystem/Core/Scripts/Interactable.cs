@@ -234,6 +234,8 @@ namespace Valve.VR.InteractionSystem
         
         private void OnAttachedToHand( Hand hand )
         {
+            //vt add
+            Debug.Log($"vt.Interactable.OnAttachedToHand: entered");
             if (activateActionSetOnAttach != null)
                 activateActionSetOnAttach.ActivatePrimary();
 

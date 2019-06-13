@@ -9,6 +9,8 @@ public class ControllerBehavior : MonoBehaviour
     public float movementSpeed = 5.0f;
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Vector2 rotateAction;
+
+    [Tooltip("Smaller equals smaller movement amount. 0.1 good for cm level")]
     public float sensitivityFactor = 1.0f;
     private float ONE_DEG = Mathf.PI / 180.0f;
     // private float rot;

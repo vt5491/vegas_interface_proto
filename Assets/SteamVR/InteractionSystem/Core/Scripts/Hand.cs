@@ -533,6 +533,12 @@ namespace Valve.VR.InteractionSystem
             int index = attachedObjects.FindIndex(l => l.attachedObject == objectToDetach);
             if (index != -1)
             {
+                //vt add
+                // Debug.Log($"Hand.DetachObject: objectToDetach.name={objectToDetach.gameObject.name}");
+                // if(hoveringInteractable) {
+                //     Debug.Log($"Hand.DetachObject: hoveringInteractable.name={hoveringInteractable.name}");
+                // }
+                //vt end
                 if (spewDebugText)
                     HandDebugLog("DetachObject " + objectToDetach);
 
@@ -995,6 +1001,9 @@ namespace Valve.VR.InteractionSystem
 
             if (hoveringInteractable)
             {
+                //vt add
+                // Debug.Log($"vt:Hand.Update: attachedObject.name={attachedObject.name}");
+                //vt end
                 hoveringInteractable.SendMessage("HandHoverUpdate", this, SendMessageOptions.DontRequireReceiver);
             }
         }

@@ -84,8 +84,10 @@ public class LazySusan : MonoBehaviour
     public void RotateDelta(float deltaTheta) {
         foreach (  GameObject go in items)
         {
-            // go.transform.eulerAngles = new Vector3(0, theta, 0);
-            go.transform.RotateAround(transform.position, Vector3.up, deltaTheta);
+            if (go != null) {
+                // go.transform.eulerAngles = new Vector3(0, theta, 0);
+                go.transform.RotateAround(transform.position, Vector3.up, deltaTheta);
+            }
             
         }
     }
