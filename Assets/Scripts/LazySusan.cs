@@ -15,19 +15,19 @@ public class LazySusan : MonoBehaviour
     void Start()
     {
         Debug.Log("LazySusan.Start: entered");
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        // cube.transform.position = new Vector3(0, 0.5f, 0);
-        cube.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 5.0f);
-        // cube.transform.position = transform.position;
-        // cube.transform.position.z += 5.0f;
-        items[0] = cube; 
+        // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        // // cube.transform.position = new Vector3(0, 0.5f, 0);
+        // cube.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 5.0f);
+        // // cube.transform.position = transform.position;
+        // // cube.transform.position.z += 5.0f;
+        // items[0] = cube; 
 
-        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.position = new Vector3(transform.position.x + 5.0f, transform.position.y, transform.position.z);
-        items[1] = sphere; 
+        // GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        // sphere.transform.position = new Vector3(transform.position.x + 5.0f, transform.position.y, transform.position.z);
+        // items[1] = sphere; 
 
-        isRotating = false;
-        rotationCount = 0;
+        // isRotating = false;
+        // rotationCount = 0;
         
     }
 
