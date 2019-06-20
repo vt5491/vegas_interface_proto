@@ -18,7 +18,7 @@ public class BlueCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("BlueCube.Start: entered");
     }
 
     // Update is called once per frame

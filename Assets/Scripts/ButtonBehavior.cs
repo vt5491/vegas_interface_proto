@@ -19,7 +19,15 @@ public class ButtonBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("BoxBehavior: entered onTrigger");
+        Debug.Log("ButtonBehavior: entered onTrigger");
         leftHand.SendMessage("BtnEvent");
+    }
+
+    public void onClick() {
+        Debug.Log("ButtonBehavior: entered onClick");
+    }
+
+    public void doIt() {
+        Debug.Log("ButtonBehavior.doIt: entered");
     }
 }
