@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class ButtonTransitioner : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerClickHandler
 {
@@ -11,9 +12,16 @@ public class ButtonTransitioner : MonoBehaviour, IPointerEnterHandler, IPointerE
     public Color32 m_DownColor = Color.white;
     
     private Image m_Image = null;
+    private GameObject m_CandlestickPull;
+    private PlayableDirector m_CandlestickPlayable;
 
     private void Awake() {
         m_Image = GetComponent<Image>();
+    }
+
+    void Start() {
+        m_CandlestickPull = GameObject.Find("candlestick_pull_fbx");
+        m_CandlestickPlayable = m_CandlestickPull.GetComponent<PlayableDirector>();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
@@ -33,5 +41,7 @@ public class ButtonTransitioner : MonoBehaviour, IPointerEnterHandler, IPointerE
     public void OnPointerClick(PointerEventData eventData) {
         Debug.Log("ButtonTransitioner.OnPointerClick event");
         m_Image.color = m_HoverColor;
+
+        m_CandlestickPlayable.Play();
     }
 }

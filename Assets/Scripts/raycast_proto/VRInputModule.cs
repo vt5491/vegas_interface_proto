@@ -7,7 +7,7 @@ using Valve.VR;
 
 public class VRInputModule : BaseInputModule
 {
-    public Camera camera;
+    public Camera m_camera;
     public SteamVR_Input_Sources targetSource;
     public SteamVR_Action_Boolean clickAction;
 
@@ -23,7 +23,7 @@ public class VRInputModule : BaseInputModule
     public override void Process() {
         // reset data, set camera
         data.Reset();
-        data.position = new Vector2(camera.pixelWidth / 2, camera.pixelHeight / 2);
+        data.position = new Vector2(m_camera.pixelWidth / 2, m_camera.pixelHeight / 2);
 
         // raycast
         eventSystem.RaycastAll(data, m_RaycastResultCache);
