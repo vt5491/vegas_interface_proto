@@ -5,37 +5,26 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.Playables;
 
-public class ButtonTransitioner : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerClickHandler
+public class ButtonTransitioner2 : MonoBehaviour
 {
     public Color32 m_NormalColor = Color.white;
     public Color32 m_HoverColor = Color.grey;
     public Color32 m_DownColor = Color.white;
-    
+    // Start is called before the first frame update
     private Image m_Image = null;
-    private GameObject m_CandlestickPull;
-    private PlayableDirector m_CandlestickPlayable;
-    private PlayableDirector m_ElvisLever2Playable;
-
-    private GameObject m_BigVegas;
-    // private Animation animation;
-    private Animator m_BigVegasAnimator;
-    private GameObject m_BigVegas_2;
     private void Awake() {
         m_Image = GetComponent<Image>();
     }
-
-    void Start() {
-        m_CandlestickPull = GameObject.Find("candlestick_pull_fbx");
-        m_CandlestickPlayable = m_CandlestickPull.GetComponent<PlayableDirector>();
-
-        // m_BigVegas = GameObject.Find("bigvegas_2");
-        m_BigVegas_2 = GameObject.Find("bigvegas_2");
-        m_ElvisLever2Playable = m_BigVegas_2.GetComponent<PlayableDirector>();
-
-        m_BigVegas = GameObject.Find("elvis_lever_2");
-        m_BigVegasAnimator = m_BigVegas.GetComponent<Animator>();
+    void Start()
+    {
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     public void OnPointerEnter(PointerEventData eventData) {
         Debug.Log("ButtonTransitioner.OnPointerEnter event");
         m_Image.color = m_HoverColor;
@@ -54,10 +43,10 @@ public class ButtonTransitioner : MonoBehaviour, IPointerEnterHandler, IPointerE
         Debug.Log("ButtonTransitioner.OnPointerClick event");
         m_Image.color = m_HoverColor;
 
-        m_CandlestickPlayable.Play();
+        // m_CandlestickPlayable.Play();
         // m_BigVegasAnimator.Play("Base Layer.stand_to_freehang");
         // m_BigVegasAnimator.Play("stand_freehang_full_cycle");
         // m_BigVegasAnimator.Play("sidebar_pull");
-        m_ElvisLever2Playable.Play();
+        // m_ElvisLever2Playable.Play();
     }
 }

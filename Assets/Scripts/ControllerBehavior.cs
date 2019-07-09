@@ -20,7 +20,8 @@ public class ControllerBehavior : MonoBehaviour
     private float rotDelta = 60.0f;
     private int rotDir = 1;
     private Vector3 startEuler;
-    private GameObject player;
+    // public GameObject player = GameObject.Find("Player");
+    public GameObject player;
 	private Vector3 gripStartPos;
     // private Vector3 lastCtrlPos;
     private Vector3 startCtrlPos;
@@ -34,10 +35,15 @@ public class ControllerBehavior : MonoBehaviour
     private Vector3 lastGripVel;
     private Vector3 lastPlayerPos;
     private float lastGripTime;
+    void Awake() {
+    //    player = GameObject.Find("Player"); 
+    }
     void Start()
     {
         // this.rot =  ONE_DEG * 90.0f; 
-        player = GameObject.Find("Player");
+        // player = GameObject.Find("Player");
+        // player = GameObject.Find("[CameraRig]");
+        player = player ? player : GameObject.Find("Player");
         // gripTransformScaleFactor = 1.7f;
         gripTransformDivFactor = 5.0f;
         gripTransformAddFactor = 1.0f;

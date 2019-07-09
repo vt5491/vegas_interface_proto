@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+// based on "vr with andrew" : https://www.youtube.com/watch?v=vNqHRD4sqPc&t=52s
 public class Pointer : MonoBehaviour
 {
     public float defaultLength = 5.0f;

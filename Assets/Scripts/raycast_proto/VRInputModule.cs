@@ -21,6 +21,7 @@ public class VRInputModule : BaseInputModule
     }
 
     public override void Process() {
+        Debug.Log("VRInputModule.Process: entered");
         // reset data, set camera
         data.Reset();
         data.position = new Vector2(m_camera.pixelWidth / 2, m_camera.pixelHeight / 2);
