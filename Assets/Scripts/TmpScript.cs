@@ -16,7 +16,7 @@ public class TmpScript : MonoBehaviour
         
     }
 
-    void DoIt() {
+    public void DoIt() {
         Debug.Log("TmpScript.DoIt: entered");
     }
 

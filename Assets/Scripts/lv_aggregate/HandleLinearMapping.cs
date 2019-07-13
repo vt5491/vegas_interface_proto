@@ -61,7 +61,7 @@ public class HandleLinearMapping : MonoBehaviour
     }
 
     void callLazySusan() {
-        Debug.Log($"Bh2LinearMappingBehavior.Update: now calling LazySusan");
-        ls.RotateDelta(10.0f);
+        Debug.Log($"HandleLinearMapping.callLazySusan: now calling LazySusan");
+        // ls.RotateDelta(10.0f);
     }
 }

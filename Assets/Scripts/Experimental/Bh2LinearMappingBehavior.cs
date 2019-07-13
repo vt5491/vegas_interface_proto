@@ -69,6 +69,6 @@ public class Bh2LinearMappingBehavior : MonoBehaviour
 
     void callLazySusan() {
         Debug.Log($"Bh2LinearMappingBehavior.Update: now calling LazySusan");
-        ls.RotateDelta(10.0f);
+        //ls.RotateDelta(10.0f);
     }
 }

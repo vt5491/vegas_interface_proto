@@ -6,6 +6,8 @@ TagManager:
   tags:
   - projectile
   - FxTemporaire
+  - lazy_susan_right_btn
+  - lazy_susan_left_btn
   layers:
   - Default
   - TransparentFX

@@ -26,21 +26,21 @@ public class ButtonTransitioner2 : MonoBehaviour
         
     }
     public void OnPointerEnter(PointerEventData eventData) {
-        Debug.Log("ButtonTransitioner.OnPointerEnter event");
+        Debug.Log("ButtonTransitioner2.OnPointerEnter event");
         m_Image.color = m_HoverColor;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        Debug.Log("ButtonTransitioner.OnPointerExit event");
+        Debug.Log("ButtonTransitioner2.OnPointerExit event");
         m_Image.color = m_NormalColor;
     }
 
     public void OnPointerDown(PointerEventData eventData) {
-        Debug.Log("ButtonTransitioner.OnPointerDown event");
+        Debug.Log("ButtonTransitioner2.OnPointerDown event");
         m_Image.color = m_DownColor;
     }
     public void OnPointerClick(PointerEventData eventData) {
-        Debug.Log("ButtonTransitioner.OnPointerClick event");
+        Debug.Log("ButtonTransitioner2.OnPointerClick event");
         m_Image.color = m_HoverColor;
 
         // m_CandlestickPlayable.Play();
